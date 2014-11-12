@@ -21,3 +21,9 @@ Deploy
 ------
 You can deploy directly to the local JBoss AS7/EAP6 instance:
 - `mvn jboss-as:deploy`
+
+ToDo
+----
+- Add delete phonebook entry feature
+- Add update phonebook entry feature
+- Add TABLE stylesheet
