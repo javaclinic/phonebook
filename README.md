@@ -34,4 +34,3 @@ ToDo
 ----
 - Add delete phonebook entry feature
 - Add update phonebook entry feature
-- Add TABLE stylesheet
