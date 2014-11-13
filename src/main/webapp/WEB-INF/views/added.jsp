@@ -25,8 +25,8 @@
     <td>${ENTRY.note}</td>
   </tr>
 </table>
-<p><a href="add">Add another phonebook entry</a></p>
-<p><a href="list">List phonebook entries</a></p>
-<p><a href="./">Home</a></p>
+<p><a class="button" href="add">Add another phonebook entry</a></p>
+<p><a class="button" href="list">List phonebook entries</a></p>
+<p><a class="button" href="./">Home</a></p>
 </body>
 </html>

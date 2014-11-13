@@ -37,4 +37,5 @@ You can deploy/redeploy/undeploy directly to the local JBoss AS7/EAP6 instance:
 
 ToDo
 ----
+- Add initialize phonebook with sample data.
 - Add multi-add feature.

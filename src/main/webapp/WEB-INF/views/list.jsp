@@ -40,7 +40,7 @@
 </table>
 </c:if>
 
-<p><a href="add">Add a phonebook entry</a></p>
-<p><a href="./">Home</a></p>
+<p><a class="button" href="add">Add a phonebook entry</a></p>
+<p><a class="button" href="./">Home</a></p>
 </body>
 </html>

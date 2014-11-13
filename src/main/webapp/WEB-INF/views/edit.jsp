@@ -26,11 +26,11 @@
     <td><input type="text" name="note" value="${ENTRY.note}" /></td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" value="Update phonebook entry" /></td>
+    <td colspan="2"><input class="button" type="submit" value="Submit" /></td>
   </tr>
 </table>
 </form>
-<p><a href="list">List phonebook entries</a></p>
-<p><a href="./">Home</a></p>
+<p><a class="button" href="list">List phonebook entries</a></p>
+<p><a class="button" href="./">Home</a></p>
 </body>
 </html>

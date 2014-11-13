@@ -21,7 +21,7 @@
   <li>/WEB-INF/phonebook-ds.xml</li>
 </ul>
 <h2>Features</h2>
-<p><a href="list">List phonebook entries</a></p>
-<p><a href="add">Add a phonebook entry</a></p>
+<p><a class="button" href="list">List phonebook entries</a></p>
+<p><a class="button" href="add">Add a phonebook entry</a></p>
 </body>
 </html>
