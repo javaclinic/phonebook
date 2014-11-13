@@ -30,7 +30,10 @@
         <td>${item.name}</td>
         <td>${item.number}</td>
         <td>${item.note}</td>
-        <td><a href="remove?id=${item.id}">Remove</a></td>
+        <td>
+          <a href="remove?id=${item.id}">Remove</a> |
+          <a href="edit?id=${item.id}">Edit</a>  
+        </td>
       </tr>
     </c:forEach>
   </tbody>

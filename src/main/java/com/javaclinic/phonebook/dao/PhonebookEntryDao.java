@@ -27,8 +27,13 @@ public class PhonebookEntryDao {
     }
 
     public PhonebookEntry update(PhonebookEntry pe) {
-        em.merge(pe);
-        return pe;
+        PhonebookEntry toUpdate = em.find(PhonebookEntry.class, pe.getId());
+        if ( toUpdate == null) throw new IllegalArgumentException("Could not find an entry with id: " + pe.getId());
+        toUpdate.setName(pe.getName());
+        toUpdate.setNote(pe.getNote());
+        toUpdate.setNumber(pe.getNumber());
+        em.merge(toUpdate);
+        return toUpdate;
     }
 
     public List<PhonebookEntry> list() {

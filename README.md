@@ -8,10 +8,13 @@ phonebook
 - `com.javaclinic.phonebook.web.ListServlet` servlet
 - `com.javaclinic.phonebook.web.AddServlet` servlet
 - `com.javaclinic.phonebook.web.RemoveServlet` servlet
+- `com.javaclinic.phonebook.web.EditServlet` servlet
 - `/WEB-INF/views/list.jsp`
 - `/WEB-INF/views/add.jsp`
 - `/WEB-INF/views/added.jsp`
 - `/WEB-INF/views/removed.jsp`
+- `/WEB-INF/views/edit.jsp`
+- `/WEB-INF/views/edited.jsp`
 - `/WEB-INF/views/error.jsp`
 - `/WEB-INF/phonebook-ds.xml`
 - `META-INF/persistence.xml`
@@ -34,4 +37,4 @@ You can deploy/redeploy/undeploy directly to the local JBoss AS7/EAP6 instance:
 
 ToDo
 ----
-- Add update phonebook entry feature
+- Add multi-add feature.
