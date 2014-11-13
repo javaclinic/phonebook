@@ -21,8 +21,9 @@ public class PhonebookEntryDao {
     }
 
     public PhonebookEntry delete(PhonebookEntry pe) {
-        em.remove(pe);
-        return pe;
+        PhonebookEntry toRemove = em.find(PhonebookEntry.class, pe.getId());
+        em.remove(toRemove);
+        return toRemove;
     }
 
     public PhonebookEntry update(PhonebookEntry pe) {
@@ -33,6 +34,10 @@ public class PhonebookEntryDao {
     public List<PhonebookEntry> list() {
         TypedQuery<PhonebookEntry> query = em.createQuery("SELECT pe FROM PhonebookEntry pe", PhonebookEntry.class);
         return query.getResultList();
+    }
+
+    public PhonebookEntry find(Integer id) {
+        return em.find(PhonebookEntry.class, id);
     }
 
 }

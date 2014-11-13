@@ -7,9 +7,11 @@ phonebook
 - `com.javaclinic.phonebook.services.PhonebookService` stateless session EJB
 - `com.javaclinic.phonebook.web.ListServlet` servlet
 - `com.javaclinic.phonebook.web.AddServlet` servlet
+- `com.javaclinic.phonebook.web.RemoveServlet` servlet
 - `/WEB-INF/views/list.jsp`
 - `/WEB-INF/views/add.jsp`
 - `/WEB-INF/views/added.jsp`
+- `/WEB-INF/views/removed.jsp`
 - `/WEB-INF/views/error.jsp`
 - `/WEB-INF/phonebook-ds.xml`
 - `META-INF/persistence.xml`
@@ -32,5 +34,4 @@ You can deploy/redeploy/undeploy directly to the local JBoss AS7/EAP6 instance:
 
 ToDo
 ----
-- Add delete phonebook entry feature
 - Add update phonebook entry feature

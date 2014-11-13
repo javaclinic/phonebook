@@ -38,10 +38,27 @@ public class PhonebookService {
         return dao.list();
     }
 
+    public PhonebookEntry getPhonebookEntry(Integer id) {
+        LOGGER.finer("Servicing PhonebookService.getPhonebookEntry(id) business request.");
+        return dao.find(id);
+    }
+
     public PhonebookEntry savePhonebookEntry(String name, String number, String note) {
-        LOGGER.finer("Servicing PhonebookService.savePhonebookEntry() business request.");
+        LOGGER.finer("Servicing PhonebookService.savePhonebookEntry(name,number,note) business request.");
         PhonebookEntry pe = new PhonebookEntry(null,name,number,note);
         return dao.save(pe);
+    }
+
+    public PhonebookEntry updatePhonebookEntry(Integer id, String name, String number, String note) {
+        LOGGER.finer("Servicing PhonebookService.updatePhonebookEntry(id,name,number,note) business request.");
+        PhonebookEntry pe = new PhonebookEntry(id,name,number,note);
+        return dao.update(pe);
+    }
+
+    public PhonebookEntry deletePhonebookEntry(Integer id) {
+        LOGGER.finer("Servicing PhonebookService.deletePhonebookEntry(id) business request.");
+        PhonebookEntry pe = new PhonebookEntry(id,null,null,null);
+        return dao.delete(pe);
     }
 
 }

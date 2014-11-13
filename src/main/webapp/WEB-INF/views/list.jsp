@@ -20,6 +20,7 @@
       <th>NAME</th>
       <th>NUMBER</th>
       <th>NOTE</th>
+      <th>ACTION</th>
     </tr>
   </thead>
   <tbody>
@@ -29,6 +30,7 @@
         <td>${item.name}</td>
         <td>${item.number}</td>
         <td>${item.note}</td>
+        <td><a href="remove?id=${item.id}">Remove</a></td>
       </tr>
     </c:forEach>
   </tbody>
